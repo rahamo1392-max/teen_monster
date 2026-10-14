@@ -5,12 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TEEN MONSTER | گروه موسیقی</title>
 <style>
-:root{--bg:#05050a;--panel:#0c0b15;--panel2:#11101c;--purple:#a855f7;--hot:#d946ef;--line:#332044;--muted:#aaa2bb;--text:#f8f5ff}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#25103b 0,transparent 36%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1300px;margin:auto;padding:0 20px}.top{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#07060df2;backdrop-filter:blur(14px);z-index:10}.logo{font-weight:900;font-style:italic;font-size:clamp(20px,3vw,31px);letter-spacing:1px;color:#d78cff;text-shadow:0 0 18px #a855f7}.nav{display:flex;gap:18px;flex-wrap:wrap}.nav a{color:#ddd3ed;text-decoration:none;font-size:13px}.nav a:hover{color:#d78cff}.btn{border:1px solid var(--purple);background:linear-gradient(120deg,#791bd1,#a855f7);color:white;border-radius:11px;padding:10px 15px}.btn.ghost{background:transparent}.hero{margin-top:18px;min-height:300px;border:1px solid #402254;border-radius:20px;overflow:hidden;position:relative;display:flex;align-items:center;padding:36px;background:linear-gradient(90deg,#080710 0%,#0b0815df 42%,#180a28a8 100%),radial-gradient(circle at 72% 40%,#8b25d6 0,transparent 25%),linear-gradient(135deg,#171022,#06060b)}.hero:after{content:"♫  ♪  ♬";position:absolute;left:6%;top:12%;font-size:70px;color:#a855f7;opacity:.13;transform:rotate(-12deg)}.hero-copy{position:relative;z-index:1;max-width:650px}.eyebrow{color:#d7a4ff;letter-spacing:3px;font-size:12px}.hero h1{font-size:clamp(36px,7vw,72px);margin:12px 0;text-shadow:0 0 30px #a855f755}.hero-title-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.hero-photo-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid #a855f7;border-radius:11px;background:#170c25;color:#f4dcff;font-size:13px;cursor:pointer;transition:.2s}.hero-photo-btn:hover{background:#35104d;box-shadow:0 0 18px #a855f733}.hero-photo-preview{display:none;width:150px;height:150px;object-fit:cover;border-radius:18px;border:3px solid #a855f7;box-shadow:0 0 20px #7c3aed55;flex-shrink:0}.hero-photo-preview.visible{display:block}.hero p{color:#d0c7df;line-height:2}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.section{margin:28px 0}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.section h2{font-size:21px;margin:0}.sub{font-size:12px;color:var(--muted);margin-top:7px}.members{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:13px}.member{min-height:220px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(160deg,#191025,#090910);padding:0;overflow:hidden;text-align:right;color:white;transition:.25s}.member:hover{transform:translateY(-5px);border-color:var(--purple);box-shadow:0 8px 28px #8b25d633}.portrait{height:145px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#7133a1,#21132f 45%,#090910 78%);font-size:56px;filter:saturate(.8)}.member:nth-child(2) .portrait{background:radial-gradient(circle at 50% 35%,#6c315c,#211222 48%,#090910)}.member:nth-child(3) .portrait{background:radial-gradient(circle at 50% 35%,#623c8d,#1c112a 48%,#090910)}.member:nth-child(4) .portrait{background:radial-gradient(circle at 50% 35%,#633b70,#17101f 48%,#090910)}.member:nth-child(5) .portrait{background:radial-gradient(circle at 50% 35%,#56318a,#17101f 48%,#090910)}.member-info{padding:12px}.member-info b{display:block}.member-info span{color:var(--muted);font-size:12px}.member-tools{padding:0 12px 12px}.member-tools label{display:inline-block;color:#e6caff;border:1px solid #5b2a80;border-radius:8px;padding:6px 8px;font-size:11px;cursor:pointer}.member-tools input{display:none}.portrait img{width:100%;height:100%;object-fit:cover}.columns{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.8fr);gap:16px}.panel{border:1px solid var(--line);border-radius:16px;background:linear-gradient(140deg,#100e1a,#08080f);padding:18px;min-width:0}.search{display:flex;gap:9px;margin:15px 0}.search input,.field{width:100%;background:#080710;border:1px solid #45305a;color:white;border-radius:10px;padding:12px;outline:none}.search input:focus,.field:focus{border-color:var(--purple)}.tracks{display:grid;gap:8px}.track{display:flex;align-items:center;gap:12px;padding:10px;border-bottom:1px solid #21182d}.cover{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#6d28d9,#180c2a);font-size:21px;flex-shrink:0}.track-info{flex:1;min-width:0}.track-info b{display:block;font-size:14px}.track-info small{color:var(--muted)}.track button,.icon-btn{background:#151020;color:#e8d5ff;border:1px solid #5b2a80;border-radius:50%;width:37px;height:37px}.empty{padding:20px;color:var(--muted);text-align:center}.side-card{margin-bottom:14px}.news-item{padding:13px 0;border-bottom:1px solid #2b2038;color:#ddd3ed;font-size:13px;line-height:1.8}.footer{border-top:1px solid var(--line);margin-top:30px;padding:25px 0;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px}.player{position:sticky;bottom:0;background:#080710f5;border-top:1px solid #482663;padding:12px 20px;display:flex;align-items:center;gap:14px;z-index:8;backdrop-filter:blur(12px)}.player .track-info{max-width:240px}.player audio{height:34px;flex:1;min-width:120px;max-width:700px;accent-color:var(--purple)}.modal-bg{display:none;position:fixed;inset:0;background:#000b;z-index:30;align-items:center;justify-content:center;padding:18px}.modal-bg.show{display:flex}.modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:#0c0a14;border:1px solid #69358d;border-radius:18px;padding:22px;box-shadow:0 0 55px #7e22ce33}.modal-head{display:flex;justify-content:space-between;align-items:center}.close{background:transparent;color:white;border:0;font-size:24px}.form{display:grid;gap:12px;margin-top:15px}.chatbox{height:190px;overflow:auto;background:#07060d;border:1px solid var(--line);border-radius:10px;padding:10px;margin:12px 0}.bubble{padding:8px 11px;background:#251333;border-radius:12px;margin:7px 0;max-width:85%;font-size:13px}.bubble.me{margin-right:auto;background:#512080}.notice{color:var(--muted);font-size:12px;line-height:1.8}.hidden{display:none!important}.admin-only:not(.hidden){display:block}
-#publicChat .chatbox{height:320px;display:flex;flex-direction:column;gap:8px}.chat-message{padding:9px 12px;border:1px solid #3b2450;border-radius:12px;background:#1a1025;max-width:90%;align-self:flex-start;overflow-wrap:anywhere}.chat-message.mine{align-self:flex-end;background:#4a1d68;border-color:#8b45b6}.chat-message .chat-meta{display:flex;gap:10px;align-items:center;font-size:11px;color:#d8b7f0;margin-bottom:5px}.chat-message .chat-text{font-size:14px;line-height:1.8;white-space:pre-wrap}.chat-compose{display:flex;gap:8px}.chat-compose .field{flex:1;min-width:0}.chat-status{font-size:12px;color:var(--muted);line-height:1.8;margin:8px 0}
-.news-card{border:1px solid var(--line);border-radius:14px;padding:16px;background:linear-gradient(150deg,#150e22,#090910);margin-bottom:12px}.news-card h3{margin:0 0 8px;color:#e8d5ff;font-size:17px}.news-card .news-meta{font-size:11px;color:var(--muted);margin-bottom:10px}.news-card .news-body{line-height:1.9;color:#ddd3ed;font-size:14px;white-space:pre-wrap}.news-card img{max-width:100%;border-radius:12px;margin-top:12px;border:1px solid var(--line)}.news-card .news-actions{margin-top:12px;display:flex;gap:8px}.covers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:13px}.cover-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0f0a18;transition:.2s}.cover-card:hover{border-color:var(--purple);transform:translateY(-4px)}.cover-card img{width:100%;height:170px;object-fit:cover;display:block}.cover-card b{display:block;padding:10px;font-size:13px;color:#e8d5ff}
+:root{--bg:#05050a;--panel:#0c0b15;--purple:#a855f7;--line:#332044;--muted:#aaa2bb;--text:#f8f5ff}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 70% 0%,#25103b 0,transparent 36%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.wrap{max-width:1300px;margin:auto;padding:0 20px}
+.top{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#07060df2;backdrop-filter:blur(14px);z-index:10}
+.logo{font-weight:900;font-style:italic;font-size:clamp(20px,3vw,31px);letter-spacing:1px;color:#d78cff;text-shadow:0 0 18px #a855f7}
+.nav{display:flex;gap:18px;flex-wrap:wrap}
+.nav a{color:#ddd3ed;text-decoration:none;font-size:13px}
+.nav a:hover{color:#d78cff}
+.btn{border:1px solid var(--purple);background:linear-gradient(120deg,#791bd1,#a855f7);color:white;border-radius:11px;padding:10px 15px}
+.btn.ghost{background:transparent}
+.hero{margin-top:18px;min-height:300px;border:1px solid #402254;border-radius:20px;overflow:hidden;position:relative;display:flex;align-items:center;padding:36px;background:linear-gradient(90deg,#080710 0%,#0b0815df 42%,#180a28a8 100%),radial-gradient(circle at 72% 40%,#8b25d6 0,transparent 25%),linear-gradient(135deg,#171022,#06060b)}
+.hero:after{content:"♫  ♪  ♬";position:absolute;left:6%;top:12%;font-size:70px;color:#a855f7;opacity:.13;transform:rotate(-12deg)}
+.hero-copy{position:relative;z-index:1;max-width:650px}
+.eyebrow{color:#d7a4ff;letter-spacing:3px;font-size:12px}
+.hero h1{font-size:clamp(36px,7vw,72px);margin:12px 0;text-shadow:0 0 30px #a855f755}
+.hero-title-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hero-photo-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid #a855f7;border-radius:11px;background:#170c25;color:#f4dcff;font-size:13px;cursor:pointer}
+.hero-photo-preview{display:none;width:150px;height:150px;object-fit:cover;border-radius:18px;border:3px solid #a855f7;flex-shrink:0}
+.hero-photo-preview.visible{display:block}
+.hero p{color:#d0c7df;line-height:2}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.section{margin:28px 0}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.section h2{font-size:21px;margin:0}
+.sub{font-size:12px;color:var(--muted);margin-top:7px}
+.members{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:13px}
+.member{min-height:220px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(160deg,#191025,#090910);padding:0;overflow:hidden;text-align:right;color:white;transition:.25s}
+.member:hover{transform:translateY(-5px);border-color:var(--purple)}
+.portrait{height:145px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#7133a1,#21132f 45%,#090910 78%);font-size:56px}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.member-info{padding:12px}
+.member-info b{display:block}
+.member-info span{color:var(--muted);font-size:12px}
+.member-tools{padding:0 12px 12px}
+.member-tools label{display:inline-block;color:#e6caff;border:1px solid #5b2a80;border-radius:8px;padding:6px 8px;font-size:11px;cursor:pointer}
+.member-tools input{display:none}
+.columns{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.8fr);gap:16px}
+.panel{border:1px solid var(--line);border-radius:16px;background:linear-gradient(140deg,#100e1a,#08080f);padding:18px;min-width:0}
+.search{display:flex;gap:9px;margin:15px 0}
+.search input,.field{width:100%;background:#080710;border:1px solid #45305a;color:white;border-radius:10px;padding:12px;outline:none}
+.search input:focus,.field:focus{border-color:var(--purple)}
+.tracks{display:grid;gap:8px}
+.track{display:flex;align-items:center;gap:12px;padding:10px;border-bottom:1px solid #21182d}
+.cover{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#6d28d9,#180c2a);font-size:21px;flex-shrink:0}
+.track-info{flex:1;min-width:0}
+.track-info b{display:block;font-size:14px}
+.track-info small{color:var(--muted)}
+.track button{background:#151020;color:#e8d5ff;border:1px solid #5b2a80;border-radius:50%;width:37px;height:37px}
+.empty{padding:20px;color:var(--muted);text-align:center}
+.side-card{margin-bottom:14px}
+.news-item{padding:13px 0;border-bottom:1px solid #2b2038;color:#ddd3ed;font-size:13px;line-height:1.8}
+.footer{border-top:1px solid var(--line);margin-top:30px;padding:25px 0;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px}
+.player{position:sticky;bottom:0;background:#080710f5;border-top:1px solid #482663;padding:12px 20px;display:flex;align-items:center;gap:14px;z-index:8}
+.player audio{height:34px;flex:1;min-width:120px;max-width:700px;accent-color:var(--purple)}
+.modal-bg{display:none;position:fixed;inset:0;background:#000b;z-index:30;align-items:center;justify-content:center;padding:18px}
+.modal-bg.show{display:flex}
+.modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:#0c0a14;border:1px solid #69358d;border-radius:18px;padding:22px}
+.modal-head{display:flex;justify-content:space-between;align-items:center}
+.close{background:transparent;color:white;border:0;font-size:24px}
+.form{display:grid;gap:12px;margin-top:15px}
+.chatbox{height:190px;overflow:auto;background:#07060d;border:1px solid var(--line);border-radius:10px;padding:10px;margin:12px 0}
+.bubble{padding:8px 11px;background:#251333;border-radius:12px;margin:7px 0;max-width:85%;font-size:13px}
+.bubble.me{margin-right:auto;background:#512080}
+.notice{color:var(--muted);font-size:12px;line-height:1.8}
+.hidden{display:none!important}
+.admin-only:not(.hidden){display:block}
+#publicChat .chatbox{height:320px;display:flex;flex-direction:column;gap:8px}
+.chat-message{padding:9px 12px;border:1px solid #3b2450;border-radius:12px;background:#1a1025;max-width:90%;align-self:flex-start;overflow-wrap:anywhere}
+.chat-message.mine{align-self:flex-end;background:#4a1d68;border-color:#8b45b6}
+.chat-message .chat-meta{display:flex;gap:10px;align-items:center;font-size:11px;color:#d8b7f0;margin-bottom:5px}
+.chat-message .chat-text{font-size:14px;line-height:1.8;white-space:pre-wrap}
+.chat-compose{display:flex;gap:8px}
+.chat-compose .field{flex:1;min-width:0}
+.chat-status{font-size:12px;color:var(--muted);line-height:1.8;margin:8px 0}
+.news-card{border:1px solid var(--line);border-radius:14px;padding:16px;background:linear-gradient(150deg,#150e22,#090910);margin-bottom:12px}
+.news-card h3{margin:0 0 8px;color:#e8d5ff;font-size:17px}
+.news-card .news-meta{font-size:11px;color:var(--muted);margin-bottom:10px}
+.news-card .news-body{line-height:1.9;color:#ddd3ed;font-size:14px;white-space:pre-wrap}
+.news-card img{max-width:100%;border-radius:12px;margin-top:12px;border:1px solid var(--line)}
+.news-card .news-actions{margin-top:12px;display:flex;gap:8px}
+.covers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:13px}
+.cover-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0f0a18}
+.cover-card img{width:100%;height:170px;object-fit:cover;display:block}
+.cover-card b{display:block;padding:10px;font-size:13px;color:#e8d5ff}
 @media(max-width:1100px){.members{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:850px){.hero-photo-preview{width:120px;height:120px}.nav{display:none}.members{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:1fr}.hero{padding:24px;min-height:260px}.player{flex-wrap:wrap}.player audio{order:3;flex-basis:100%}}
+@media(max-width:850px){.nav{display:none}.members{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:1fr}}
 @media(min-width:560px) and (max-width:850px){.members{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style>
 </head>
@@ -35,28 +118,40 @@
         <h1>TEEN MONSTER</h1>
         <label for="heroPhotoInput" class="hero-photo-btn">📷 افزودن عکس</label>
         <input id="heroPhotoInput" type="file" accept="image/*" hidden>
-        <img id="heroPhotoPreview" class="hero-photo-preview" alt="عکس انتخاب‌شده کنار عنوان">
+        <img id="heroPhotoPreview" class="hero-photo-preview" alt="">
       </div>
       <p>موسیقی ما، صدای ماست؛ به دنیای طرفدارهای تین مانستر خوش اومدی.</p>
-      <div class="hero-actions"><a class="btn" href="#music" style="text-decoration:none">♪ شنیدن آهنگ‌ها</a><a class="btn ghost" href="#members" style="text-decoration:none">آشنایی با اعضا</a></div>
+      <div class="hero-actions">
+        <a class="btn" href="#music" style="text-decoration:none">♪ شنیدن آهنگ‌ها</a>
+        <a class="btn ghost" href="#members" style="text-decoration:none">آشنایی با اعضا</a>
+      </div>
     </div>
   </section>
 
   <section class="section" id="members">
-    <div class="section-head"><div><h2>✦ اعضای گروه</h2><div class="sub">روی عکس هر عضو بزن تا پروفایلش رو ببینی و پیام بفرستی.</div></div><span id="adminBadge" class="sub"></span></div>
+    <div class="section-head">
+      <div><h2>✦ اعضای گروه</h2><div class="sub">روی عکس هر عضو بزن تا پروفایلش رو ببینی.</div></div>
+      <span id="adminBadge" class="sub"></span>
+    </div>
     <div class="members" id="membersGrid"></div>
   </section>
 
   <section class="section panel" id="publicChat">
-    <div class="section-head"><div><h2>💬 چت عمومی طرفدارها</h2><div class="sub">با اعضای دیگر گفتگو کن؛ لطفاً اطلاعات شخصی منتشر نکن.</div></div><span id="chatConnection" class="sub">در حال بررسی اتصال…</span></div>
-    <div class="chatbox" id="publicChatMessages" role="log" aria-live="polite"><div class="empty">در حال بارگذاری پیام‌ها…</div></div>
-    <form id="publicChatForm" class="chat-compose"><input id="publicChatInput" class="field" maxlength="500" placeholder="پیامت رو بنویس…" autocomplete="off" required><button class="btn" type="submit">ارسال</button></form>
-    <p class="chat-status" id="publicChatStatus">برای ارسال پیام باید وارد حساب آنلاین خودت شوی.</p>
+    <div class="section-head">
+      <div><h2>💬 چت عمومی طرفدارها</h2><div class="sub">با بقیه گفتگو کن؛ اطلاعات شخصی منتشر نکن.</div></div>
+      <span id="chatConnection" class="sub">در حال بررسی…</span>
+    </div>
+    <div class="chatbox" id="publicChatMessages"><div class="empty">در حال بارگذاری…</div></div>
+    <form id="publicChatForm" class="chat-compose">
+      <input id="publicChatInput" class="field" maxlength="500" placeholder="پیامت رو بنویس…" autocomplete="off" required>
+      <button class="btn" type="submit">ارسال</button>
+    </form>
+    <p class="chat-status" id="publicChatStatus">برای ارسال پیام باید وارد حساب شوی.</p>
   </section>
 
   <section class="section panel" id="news">
     <div class="section-head">
-      <div><h2>📰 اخبار گروه</h2><div class="sub">آخرین خبرها و اطلاعیه‌های TEEN MONSTER</div></div>
+      <div><h2>📰 اخبار گروه</h2><div class="sub">آخرین خبرها و اطلاعیه‌ها</div></div>
       <button class="btn admin-only hidden" id="addNewsBtn">＋ انتشار خبر</button>
     </div>
     <div id="newsList" class="tracks"><div class="empty">در حال بارگذاری اخبار…</div></div>
@@ -67,58 +162,61 @@
       <div><h2>🎤 کاورها</h2><div class="sub">کاورهای اعضای گروه</div></div>
       <button class="btn admin-only hidden" id="addCoverBtn">＋ افزودن کاور</button>
     </div>
-    <div id="coversList" class="covers-grid"><div class="empty">در حال بارگذاری کاورها…</div></div>
+    <div id="coversList" class="covers-grid"><div class="empty">در حال بارگذاری…</div></div>
   </section>
 
   <div class="columns">
     <section class="panel" id="music">
-      <div class="section-head"><div><h2>♫ موسیقی‌های گروه</h2><div class="sub">آهنگ موردنظرت رو جست‌وجو کن و پخش کن.</div></div><button class="btn ghost admin-only hidden" id="uploadBtn">＋ افزودن آهنگ</button></div>
+      <div class="section-head">
+        <div><h2>♫ موسیقی‌های گروه</h2><div class="sub">آهنگ موردنظرت رو جست‌وجو کن.</div></div>
+        <button class="btn ghost admin-only hidden" id="uploadBtn">＋ افزودن آهنگ</button>
+      </div>
       <div class="search"><input id="songSearch" placeholder="جست‌وجوی نام آهنگ..."></div>
       <div class="tracks" id="trackList"></div>
-      <p class="notice">توجه: افزودن آهنگ فعلاً فقط توی همین مرورگر ذخیره می‌شه. برای اشتراک‌گذاری عمومی باید آهنگ‌ها به Storage سوپابیس منتقل شوند.</p>
+      <p class="notice">آهنگ فعلاً فقط توی همین مرورگر ذخیره می‌شه.</p>
     </section>
     <aside>
       <section class="panel side-card">
         <h2>♬ تازه‌های گروه</h2>
-        <div class="news-item">به صفحه رسمی طرفدارهای TEEN MONSTER خوش اومدی!</div>
-        <div class="news-item">از بخش اخبار، جدیدترین اطلاعیه‌ها رو دنبال کن.</div>
+        <div class="news-item">به صفحه رسمی TEEN MONSTER خوش اومدی!</div>
+        <div class="news-item">از بخش اخبار، اطلاعیه‌ها رو دنبال کن.</div>
         <div class="news-item">کاورها رو توی بخش «کاورها» ببین.</div>
       </section>
       <section class="panel side-card" id="contact">
         <h2>✉ ارتباط با ما</h2>
-        <p class="sub">برای خبرهای تازه و برنامه‌های گروه، شبکه‌های اجتماعی‌تون رو اینجا قرار بدید.</p>
-        <a class="btn ghost" href="https://rubika.ir/TEEN_MONSTER_2026" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none">💜 ورود به روبیکای TEEN MONSTER (@TEEN_MONSTER_2026)</a>
+        <a class="btn ghost" href="https://rubika.ir/TEEN_MONSTER_2026" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none">💜 روبیکای TEEN MONSTER</a>
       </section>
     </aside>
   </div>
   <footer class="footer"><span class="logo" style="font-size:18px">TEEN MONSTER</span><span>با موسیقی کنار همیم ♡</span><span>© TEEN MONSTER</span></footer>
 </main>
+
 <div class="player">
-  <div class="cover">♫</div><div class="track-info"><b id="nowTitle">هنوز آهنگی انتخاب نشده</b><small id="nowArtist">TEEN MONSTER</small></div>
+  <div class="cover">♫</div>
+  <div class="track-info"><b id="nowTitle">هنوز آهنگی انتخاب نشده</b><small id="nowArtist">TEEN MONSTER</small></div>
   <audio id="audioPlayer" controls preload="metadata"></audio>
 </div>
 
 <div class="modal-bg" id="memberModal"><div class="modal">
   <div class="modal-head"><div><h2 id="memberTitle">پروفایل عضو</h2><div class="sub" id="memberRole"></div></div><button class="close" data-close="memberModal">×</button></div>
   <div id="memberBio" style="line-height:2;color:#e7d9f7;margin:14px 0"></div>
-  <p class="notice">این بخش گفت‌وگوی نمایشی است؛ پیام‌ها فقط در همین مرورگر می‌مانند.</p>
   <div class="chatbox" id="chatBox"></div>
   <form class="search" id="chatForm"><input id="chatInput" placeholder="پیامت رو بنویس..." required><button class="btn">ارسال</button></form>
 </div></div>
 
 <div class="modal-bg" id="editMemberModal"><div class="modal">
-  <div class="modal-head"><h2>ویرایش عضو گروه</h2><button class="close" data-close="editMemberModal">×</button></div>
+  <div class="modal-head"><h2>ویرایش عضو</h2><button class="close" data-close="editMemberModal">×</button></div>
   <form class="form" id="editMemberForm">
     <input type="hidden" id="editMemberIndex">
     <input class="field" id="editMemberName" placeholder="اسم عضو" required maxlength="50">
-    <textarea class="field" id="editMemberBio" placeholder="درباره این عضو بنویس..." rows="5" required></textarea>
-    <button class="btn" type="submit">ذخیره تغییرات</button>
+    <textarea class="field" id="editMemberBio" placeholder="درباره این عضو..." rows="5" required></textarea>
+    <button class="btn" type="submit">ذخیره</button>
   </form>
 </div></div>
 
 <div class="modal-bg" id="accountModal"><div class="modal">
   <div class="modal-head"><h2>حساب طرفداری</h2><button class="close" data-close="accountModal">×</button></div>
-  <p class="notice">با ایمیل ثبت‌نام کن. نقش مدیر فقط از دیتابیس تأیید می‌شود.</p>
+  <p class="notice">با ایمیل ثبت‌نام کن. نقش مدیر از دیتابیس تأیید می‌شه.</p>
   <form class="form" id="accountForm">
     <input class="field" id="username" placeholder="نام نمایشی" required maxlength="30">
     <input class="field" id="email" type="email" placeholder="ایمیل" required>
@@ -130,20 +228,22 @@
     <h3>حساب کاربری من</h3>
     <p id="dashboardName"></p>
     <p id="dashboardEmail" class="sub"></p>
-    <button class="btn ghost" type="button" id="editMyProfileBtn">ویرایش پروفایل من</button>
     <button class="btn ghost" type="button" id="userLogoutBtn">خروج از حساب</button>
   </div>
   <p id="accountStatus" class="sub"></p>
 </div></div>
 
 <div class="modal-bg" id="uploadModal"><div class="modal">
-  <div class="modal-head"><h2>افزودن آهنگ جدید</h2><button class="close" data-close="uploadModal">×</button></div>
-  <form class="form" id="uploadForm"><input class="field" id="songTitle" placeholder="نام آهنگ" required><input class="field" id="songFile" type="file" accept="audio/*" required><button class="btn">افزودن به فهرست</button></form>
-  <p class="notice">آهنگ فقط توی همین مرورگر ذخیره می‌شه. برای انتشار عمومی به Storage آنلاین نیاز داریم.</p>
+  <div class="modal-head"><h2>افزودن آهنگ</h2><button class="close" data-close="uploadModal">×</button></div>
+  <form class="form" id="uploadForm">
+    <input class="field" id="songTitle" placeholder="نام آهنگ" required>
+    <input class="field" id="songFile" type="file" accept="audio/*" required>
+    <button class="btn">افزودن</button>
+  </form>
 </div></div>
 
 <div class="modal-bg" id="newsModal"><div class="modal">
-  <div class="modal-head"><h2>انتشار خبر جدید</h2><button class="close" data-close="newsModal">×</button></div>
+  <div class="modal-head"><h2>انتشار خبر</h2><button class="close" data-close="newsModal">×</button></div>
   <form class="form" id="newsForm">
     <input class="field" id="newsTitle" placeholder="عنوان خبر" required maxlength="120">
     <textarea class="field" id="newsBody" placeholder="متن خبر..." rows="6" required maxlength="2000"></textarea>
@@ -154,7 +254,7 @@
 </div></div>
 
 <div class="modal-bg" id="coverModal"><div class="modal">
-  <div class="modal-head"><h2>افزودن کاور جدید</h2><button class="close" data-close="coverModal">×</button></div>
+  <div class="modal-head"><h2>افزودن کاور</h2><button class="close" data-close="coverModal">×</button></div>
   <form class="form" id="coverForm">
     <input class="field" id="coverTitle" placeholder="نام کاور" required maxlength="120">
     <input class="field" id="coverImage" type="file" accept="image/*" required>
@@ -164,486 +264,6 @@
 </div></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-/* ============================================================
-   ۱) اطلاعات Supabase — این دو خط را با مقدار پروژه‌ی خودت عوض کن
-   ============================================================ */
-const SUPABASE_URL = "https://ttffiyxqxphixryjavq.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_WetuCjAtn1DCom1pOF3SKw_fxMbJdr_";
-const supabaseReady = !!(window.supabase && SUPABASE_PUBLISHABLE_KEY !== "sb_publishable_WetuCjAtn1DCom1pOF3SKw_fxMbJdr_");
-const supabaseClient = supabaseReady ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
-
-/* ============================================================
-   اعضا
-   ============================================================ */
-const members=[
- {name:"اسم عضو ۱",role:"عضو گروه TEEN MONSTER",emoji:"🦊",bio:"اینجا درباره عضو اول بنویس."},
- {name:"اسم عضو ۲",role:"عضو گروه TEEN MONSTER",emoji:"🐈",bio:"اینجا درباره عضو دوم بنویس."},
- {name:"اسم عضو ۳",role:"عضو گروه TEEN MONSTER",emoji:"🦌",bio:"اینجا درباره عضو سوم بنویس."},
- {name:"اسم عضو ۴",role:"عضو گروه TEEN MONSTER",emoji:"🐰",bio:"اینجا درباره عضو چهارم بنویس."},
- {name:"اسم عضو ۵",role:"عضو گروه TEEN MONSTER",emoji:"🦥",bio:"اینجا درباره عضو پنجم بنویس."},
- {name:"اسم عضو ۶",role:"عضو گروه TEEN MONSTER",emoji:"🐳",bio:"اینجا درباره عضو ششم بنویس."},
- {name:"اسم عضو ۷",role:"عضو گروه TEEN MONSTER",emoji:"🐼",bio:"اینجا درباره عضو هفتم بنویس."}
-];
-let songs=JSON.parse(localStorage.getItem("tm_songs")||"[]");
-let activeMember=null;
-let isAdmin=false;       // مدیر از دیتابیس
-const $=id=>document.getElementById(id);
-
-function getMemberPhotos(){try{return JSON.parse(localStorage.getItem("tm_member_photos")||"{}")}catch(e){return {}}}
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function openModal(id){$(id).classList.add("show")}
-function closeModal(id){$(id).classList.remove("show")}
-
-/* ============================================================
-   رندر اعضا
-   ============================================================ */
-function renderMembers(){
- const photos=getMemberPhotos();
- $("membersGrid").innerHTML=members.map((m,i)=>`<article class="member"><button style="display:block;width:100%;padding:0;background:none;border:0;color:white;text-align:right" data-member="${i}"><div class="portrait">${photos[i]?`<img src="${photos[i]}" alt="${escapeHtml(m.name)}">`:m.emoji}</div><div class="member-info"><b>${escapeHtml(m.name)}</b><span>${escapeHtml(m.role)} · مشاهده پروفایل ↗</span></div></button>${isAdmin?`<div class="member-tools"><label>＋ افزودن/تغییر عکس<input type="file" accept="image/*" data-photo="${i}"></label><button type="button" class="btn ghost" style="padding:6px 8px;font-size:11px;margin:5px 0" data-edit-member="${i}">✎ تغییر اسم و بیو</button></div>`:""}</article>`).join("");
-}
-
-/* ============================================================
-   رندر آهنگ‌ها
-   ============================================================ */
-function renderSongs(){
- const q=$("songSearch").value.trim().toLowerCase();
- const filtered=songs.filter(s=>s.title.toLowerCase().includes(q));
- $("trackList").innerHTML=filtered.length?filtered.map(s=>`<div class="track"><div class="cover">♫</div><div class="track-info"><b>${escapeHtml(s.title)}</b><small>TEEN MONSTER</small></div><button aria-label="پخش" data-play="${s.id}">▶</button></div>`).join(""):'<div class="empty">هنوز آهنگی اضافه نشده؛ از «افزودن آهنگ» شروع کن.</div>';
-}
-function setSong(s){$("audioPlayer").src=s.url;$("nowTitle").textContent=s.title;$("nowArtist").textContent="TEEN MONSTER";$("audioPlayer").play().catch(()=>{});}
-
-UI
-   ============================================================ */
-function updateAdminUI(){
-  document.querySelectorAll(".admin-only").forEach(el=>el.classList.toggle("hidden",!isAdmin));
-  $("adminBadge").textContent = isAdmin ? "✓ مدیر وارد شده (تأیید از دیتابیس)" : "افزودن محتوا فقط برای مدیر";
-  $("uploadBtn").classList.toggle("hidden", !isAdmin);
-  renderMembers();
-}
-
-/* ============================================================
-   رویدادهای اعضا
-   ============================================================ */
-$("membersGrid").addEventListener("click", e => {
-  if (e.target.closest("label") || e.target.matches("input")) return;
-  const btn = e.target.closest("[data-member]");
-  if (!btn) return;
-  activeMember = members[+btn.dataset.member];
-  $("memberTitle").textContent = activeMember.name;
-  $("memberRole").textContent = activeMember.role;
-  $("memberBio").textContent = activeMember.bio;
-  $("chatBox").innerHTML = '<div class="bubble">سلام! به صفحه‌ی من خوش اومدی 👋</div>';
-  openModal("memberModal");
-});
-
-$("membersGrid").addEventListener("click", e => {
-  const btn = e.target.closest("[data-edit-member]");
-  if (!btn) return;
-  if (!isAdmin) { alert("فقط مدیر می‌تواند ویرایش کند."); return; }
-  const i = Number(btn.dataset.editMember), m = members[i];
-  $("editMemberIndex").value = i;
-  $("editMemberName").value = m.name;
-  $("editMemberBio").value = m.bio;
-  openModal("editMemberModal");
-});
-
-$("editMemberForm").addEventListener("submit", e => {
-  e.preventDefault();
-  if (!isAdmin) return;
-  const i = Number($("editMemberIndex").value);
-  members[i].name = $("editMemberName").value.trim();
-  members[i].bio = $("editMemberBio").value.trim();
-  try { localStorage.setItem("tm_members_data", JSON.stringify(members)); } catch(err) {}
-  renderMembers();
-  closeModal("editMemberModal");
-});
-
-$("membersGrid").addEventListener("change", e => {
-  const input = e.target.closest("[data-photo]");
-  if (!isAdmin || !input || !input.files[0]) return;
-  const file = inputای.files[0];
-  if (!file.type.startsWith("image/")) { alert("لطفاً یک فایل عکس انتخاب کن."); return; }
-  if (file.size > 1.5*1024*1024) { alert("حجم عکس باید کمتر از ۱.۵ مگابایت باشد."); return; }
-  const reader = new FileReader();
-  reader.onload = () => {
-    const photos = getMemberPhotos();
-    photos[input.dataset.photo] = reader.result;
-    try { localStorage.setItem("tm_member_photos", JSON.stringify(photos)); renderMembers(); }
-    catch(err) { alert("فض ذخیره‌سازی پر شده."); }
-  };
-  reader.readAsDataURL(file);
-});
-
-/* ============================================================
-   پخش آهنگ
-   ============================================================ */
-$("trackList").addEventListener("click", e => {
-  const b = e.target.closest("[data-play]");
-  if (!b) return;
-  const s = songs.find(x => x.id === b.dataset.play);
-  if (s) setSong(s);
-});
-$("songSearch").addEventListener("input", renderSongs);
-
-/* ============================================================
-   مودال‌ها
-   ============================================================ */
-document.querySelectorAll("[data-close]").forEach(b => b.onclick = () => closeModal(b.dataset.close));
-document.querySelectorAll(".modal-bg").forEach(m => m.addEventListener("click", e => { if (e.target === m) closeModal(m.id); }));
-
-$("chatForm").addEventListener("submit", e => {
-  e.preventDefault();
-  const v = $("chatInput").value.trim();
-  if (!v) return;
-  $("chatBox").insertAdjacentHTML("beforeend", `<div class="bubble me">${escapeHtml(v)}</div><div class="bubble">پیامت ثبت شد (نمایشی).</div>`);
-  $("chatInput").value = "";
-  $("chatBox").scrollTop = $("chatBox").scrollHeight;
-});
-
-/* ============================================================
-   دکمه‌های حساب
-   ============================================================ */
-$("accountBtn").addEventListener("click", () => {
-  const current = localStorage.getItem("tm_demo_user");
-  openModal("accountModal");
-  if (current) showUserDashboard(current); else resetAccountView();
-});
-
-$("uploadBtn").onclick = () => openModal("uploadModal");
-
-/* ============================================================
-   آپلود آهنگ
-   ============================================================ */
-$("uploadForm").addEventListener("submit", e => {
-  e.preventDefault();
-  if (!isAdmin) { alert("فقط مدیر می‌تواند آهنگ اضافه کند."); return; }
-  const file = $("songFile").files[0], title = $("songTitle").value.trim();
-  if (!file || !title) return;
-  const url = URL.createObjectURL(file);
-  songs.unshift({ id: String(Date.now()), title, url });
-  try { localStorage.setItem("tm_songs", JSON.stringify(songs.map(s => ({ id:s.id, title:s.title, url: s.url.startsWith("blob:") ? "" : s.url })))); } catch(err) {}
-  renderSongs();
-  closeModal("uploadModal");
-  $("uploadForm").reset();
-});
-
-/* ============================================================
-   احراز هویت Supabase
-   ============================================================ */
-function accountKey(){ return $("email").value.trim().toLowerCase(); }
-function showUserDashboard(name, email=""){
-  $("accountForm").style.display = "none";
-  $("userDashboard").style.display = "block";
-  $("dashboardName").textContent = "نام کاربری: " + name;
-  $("dashboardEmail").textContent = "ایمیل: " + (email || "ثبت نشده");
-  $("accountBtn").textContent = name;
-}
-function setSignedIn(name, email=""){
-  localStorage.setItem("tm_demo_user", name);
-  showUserDashboard(name, email);
-}
-function resetAccountView(){
-  $("accountForm").style.display = "flex";
-  $("userDashboard").style.display = "none";
-  $("accountStatus").textContent = "";
-}
-function authErrorMessage(error){
-  const msg = (error && error.message) || "خطای ناشناخته";
-  if (msg.toLowerCase().includes("invalid login credentials")) return "ایمیل یا رمز عبور درست نیست.";
-  if (msg.toLowerCase().includes("email not confirmed")) return "اول ایمیلت رو تأیید کن.";
-  if (msg.toLowerCase().includes("user already registered")) return "این ایمیل قبلاً ثبت‌نام کرده.";
-  return "خطا: " + msg;
-}
-
-$("userLogoutBtn").addEventListener("click", async () => {
-  if (supabaseClient) await supabaseClient.auth.signOut();
-  localStorage.removeItem("tm_demo_user");
-  $("accountBtn").textContent = "ورود / ثبت‌نام";
-  resetAccountView();
-});
-
-$("accountForm").addEventListener("submit", async e => {
-  e.preventDefault();
-  const n = $("username").value.trim();
-  const email = $("email").value.trim().toLowerCase();
-  const password = $("password").value;
-  if (!n || !email) { $("accountStatus").textContent = "همه فیلدها را پر کن."; return; }
-  if (password.length < 6) { $("accountStatus").textContent = "رمز باید حداقل ۶ کاراکتر باشد."; return; }
-  if (!supabaseClient) { $("accountStatus").textContent = "اتصال Supabase تنظیم نشده."; return; }
-  $("accountStatus").textContent = "در حال ساخت حساب…";
-  const { data, error } = await supabaseClient.auth.signUp({ email, password, options: { data: { display_name: n } } });
-  if (error) { $("accountStatus").textContent = authErrorMessage(error); return; }
-  if (data.session) {
-    setSignedIn(n, email);
-    $("accountStatus").textContent = "حساب ساخته شد و وارد شدی ✅";
-    await refreshAdminRole();
-    closeModal("accountModal");
-  } else {
-    $("accountStatus").textContent = "ثبت‌نام ارسال شد. ایمیلت را بررسی کن.";
-  }
-});
-
-$("loginUserBtn").addEventListener("click", async () => {
-  const email = $("email").value.trim().toLowerCase();
-  const password = $("password").value;
-  if (!email || !password) { $("accountStatus").textContent = "ایمیل و رمز را وارد کن."; return; }
-  if (!supabaseClient) { $("accountStatus").textContent = "اتصال Supabase تنظیم نشده."; return; }
-  $("accountStatus").textContent = "در حال ورود…";
-  const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
-  if (error) { $("accountStatus").textContent = authErrorMessage(error); return; }
-  const name = data.user.user_metadata?.display_name || email.split("@")[0];
-  setSignedIn(name, email);
-  $("accountStatus").textContent = "وارد شدی ✅";
-  await refreshAdminRole();
-  closeModal("accountModal");
-});
-
-/* ============================================================
-   چک کردن نقش مدیر از دیتابیس
-   ============================================================ */
-async function refreshAdminRole(){
-  if (!supabaseClient) { isAdmin = false; updateAdminUI(); return; }
-  const { data: sessionData } = await supabaseClient.auth.getSession();
-  const user = sessionData.session?.user;
-  if (!user) { isAdmin = false; updateAdminUI(); return; }
-  const { data, error } = await supabaseClient.from("profiles").select("role").eq("id", user.id).maybeSingle();
-  isAdmin = !error && data?.role === "admin";
-  updateAdminUI();
-}
-
-if (supabaseClient) {
-  supabaseClient.auth.getSession().then(({ data }) => {
-    const user = data.session?.user;
-    if (user) {
-      const name = user.user_metadata?.display_name || user.email?.split("@")[0] || "طرفدار";
-      setSignedIn(name, user.email || "");
-    }
-    refreshAdminRole();
-  });
-  supabaseClient.auth.onAuthStateChange(() => { setTimeout(refreshAdminRole, 0); });
-}
-
-/* ============================================================
-   اخبار
-   ============================================================ */
-const newsListEl = $("newsList");
-const newsStatusEl = $("newsStatus");
-const coversListEl = $("coversList");
-const coverStatusEl = $("coverStatus");
-
-async function loadNews() {
-  if (!supabaseClient) { newsListEl.innerHTML = '<div class="empty">اتصال Supabase لازم است.</div>'; return; }
-  const { data, error } = await supabaseClient.from("news").select("id,title,body,image_url,created_at").order("created_at", { ascending: false }).limit(50);
-  if (error) { newsListEl.innerHTML = '<div class="empty">خطا: ' + escapeHtml(error.message) + '</div>'; return; }
-  if (!data || !data.length) { newsListEl.innerHTML = '<div class="empty">هنوز خبری منتشر نشده.</div>'; return; }
-  newsListEl.innerHTML = data.map(n => `
-    <article class="news-card">
-      <h3>${escapeHtml(n.title)}</h3>
-      <div class="news-meta">${new Date(n.created_at).toLocaleString('fa-IR',{dateStyle:'medium',timeStyle:'short'})}</div>
-      <div class="news-body">${escapeHtml(n.body)}</div>
-      ${n.image_url ? `<img src="${escapeHtml(n.image_url)}" alt="">` : ""}
-      ${isAdmin ? `<div class="news-actions"><button class="btn ghost" data-del-news="${n.id}">حذف</button></div>` : ""}
-    </article>
-  `).join("");
-}
-
-$("addNewsBtn").addEventListener("click", () => {
-  if (!isAdmin) { alert("فقط مدیر می‌تواند خبر منتشر کند."); return; }
-  newsStatusEl.textContent = "";
-  openModal("newsModal");
-});
-
-$("newsForm").addEventListener("submit", async e => {
-  e.preventDefault();
-  if (!isAdmin) { newsStatusEl.textContent = "دسترسی نداری."; return; }
-  const title = $("newsTitle").value.trim();
-  const body = $("newsBody").value.trim();
-  const file = $("newsImage").files[0];
-  if (!title || !body) return;
-  newsStatusEl.textContent = "در حال ارسال…";
-  try {
-    let imageUrl = null;
-    if (file) {
-      const ext = file.name.split('.').pop();
-      const path = `news/${Date.now()}.${ext}`;
-      const { error: upErr } = await supabaseClient.storage.from("media").upload(path, file);
-      if (upErr) throw upErr;
-      const { data: urlData } = supabaseClient.storage.from("media").getPublicUrl(path);
-      imageUrl = urlData.publicUrl;
-    }
-    const { data: sessionData } = await supabaseClient.auth.getSession();
-    const { error } = await supabaseClient.from("news").insert({ title, body, image_url: imageUrl, author_id: sessionData.session.user.id });
-    if (error) throw error;
-    newsStatusEl.textContent = "خبر منتشر شد ✅";
-    $("newsForm").reset();
-    closeModal("newsModal");
-    loadNews();
-  } catch (err) {
-    newsStatusEl.textContent = "خطا: " + (err.message || err);
-  }
-});
-
-newsListEl.addEventListener("click", async e => {
-  const btn = e.target.closest("[data-del-news]");
-  if (!btn || !isAdmin) return;
-  if (!confirm("این خبر حذف شود؟")) return;
-  const { error } = await supabaseClient.from("news").delete().eq("id", btn.dataset.delNews);
-  if (error) alert("حذف نشد: " + error.message);
-  else loadNews();
-});
-
-/* ============================================================
-   کاورها
-   ============================================================ */
-async function loadCovers() {
-  if (!supabaseClient) { coversListEl.innerHTML = '<div class="empty">اتصال Supabase لازم است.</div>'; return; }
-  const { data, error } = await supabaseClient.from("covers").select("id,title,image_url,created_at").order("created_at", { ascending: false }).limit(60);
-  if (error) { coversListEl.innerHTML = '<div class="empty">خطا: ' + escapeHtml(error.message) + '</div>'; return; }
-  if (!data || !data.length) { coversListEl.innerHTML = '<div class="empty">هنوز کاوری اضافه نشده.</div>'; return; }
-  coversListEl.innerHTML = data.map(c => `
-    <div class="cover-card">
-      <img src="${escapeHtml(c.image_url)}" alt="${escapeHtml(c.title)}">
-      <b>${escapeHtml(c.title)}</b>
-      ${isAdmin ? `<button class="btn ghost" style="margin:8px" data-del-cover="${c.id}">حذف</button>` : ""}
-    </div>
-  `).join("");
-}
-
-$("addCoverBtn").addEventListener("click", () => {
-  if (!isAdmin) { alert("فقط مدیر می‌تواند کاور اضافه کند."); return; }
-  coverStatusEl.textContent = "";
-  openModal("coverModal");
-});
-
-$("coverForm").addEventListener("submit", async e => {
-  e.preventDefault();
-  if (!isAdmin) { coverStatusEl.textContent = "دسترسی نداری."; return; }
-  const title = $("coverTitle").value.trim();
-  const file = $("coverImage").files[0];
-  if (!title || !file) return;
-  coverStatusEl.textContent = "در حال ارسال…";
-  try {
-    const ext = file.name.split('.').pop();
-    const path = `covers/${Date.now()}.${ext}`;
-    const { error: upErr } = await supabaseClient.storage.from("media").upload(path, file);
-    if (upErr) throw upErr;
-    const { data: urlData } = supabaseClient.storage.from("media").getPublicUrl(path);
-    const { data: sessionData } = await supabaseClient.auth.getSession();
-    const { error } = await supabaseClient.from("covers").insert({ title, image_url: urlData.publicUrl, author_id: sessionData.session.user.id });
-    if (error) throw error;
-    coverStatusEl.textContent = "کاور اضافه شد ✅";
-    $("coverForm").reset();
-    closeModal("coverModal");
-    loadCovers();
-  } catch (err) {
-    coverStatusEl.textContent = "خطا: " + (err.message || err);
-  }
-});
-
-coversListEl.addEventListener("click", async e => {
-  const btn = e.target.closest("[data-del-cover]");
-  if (!btn || !isAdmin) return;
-  if (!confirm("این کاور حذف شود؟")) return;
-  const { error } = await supabaseClient.from("covers").delete().eq("id", btn.dataset.delCover);
-  if (error) alert("حذف نشد: " + error.message);
-  else loadCovers();
-});
-
-/* ============================================================
-   چت عمومی
-   ============================================================ */
-const chatMessagesEl = $("publicChatMessages");
-const chatStatusEl = $("publicChatStatus");
-const chatConnectionEl = $("chatConnection");
-const chatForm = $("publicChatForm");
-const chatInput = $("publicChatInput");
-let chatUser = null;
-let chatChannel = null;
-
-function chatEscape(v){ return String(v ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch])); }
-function showChatMessages(rows){
-  if (!rows || !rows.length) { chatMessagesEl.innerHTML = '<div class="empty">هنوز پیامی نیست؛ اولین پیام رو تو بفرست! 💜</div>'; return; }
-  chatMessagesEl.innerHTML = rows.map(m => `<div class="chat-message ${chatUser && m.user_id===chatUser.id?'mine':''}"><div class="chat-meta"><b>${chatEscape(m.display_name||'طرفدار')}</b><span>${chatEscape(new Date(m.created_at).toLocaleString('fa-IR',{dateStyle:'short',timeStyle:'short'}))}</span></div><div class="chat-text">${chatEscape(m.message)}</div></div>`).join('');
-  chatMessagesEl.scrollTop = chatMessagesEl.scrollHeight;
-}
-async function loadPublicChat(){
-  if (!supabaseClient) { chatConnectionEl.textContent = 'اتصال تنظیم نشده'; chatMessagesEl.innerHTML = '<div class="empty">اتصال Supabase لازم است.</div>'; return; }
-  const { data: sessionData } = await supabaseClient.auth.getSession();
-  chatUser = sessionData.session?.user || null;
-  chatStatusEl.textContent = chatUser ? 'وارد شده‌ای؛ پیام‌ها برای همه قابل مشاهده‌اند.' : 'برای ارسال پیام، اول وارد حساب شو.';
-  chatInput.disabled = !chatUser;
-  chatForm.querySelector('button').disabled = !chatUser;
-  chatConnectionEl.textContent = 'در حال اتصال…';
-  const { data, error } = await supabaseClient.from('public_chat_messages').select('id,user_id,display_name,message,created_at').order('created_at',{ascending:true}).limit(100);
-  if (error) { chatConnectionEl.textContent='چت آماده نیست'; chatMessagesEl.innerHTML='<div class="empty">جدول چت ساخته نشده.</div>'; return; }
-  showChatMessages(data||[]);
-  chatConnectionEl.textContent = '🟢 متصل';
-  if (chatChannel) await supabaseClient.removeChannel(chatChannel);
-  chatChannel = supabaseClient.channel('teen-monster-public-chat').on('postgres_changes',{event:'INSERT',schema:'public',table:'public_chat_messages'},payload=>{
-    const row = payload.new;
-    if (chatMessagesEl.querySelector(`[data-chat-id="${row.id}"]`)) return;
-    if (chatMessagesEl.querySelector('.empty')) chatMessagesEl.innerHTML='';
-    const div = document.createElement('div'); div.className='chat-message '+(chatUser&&row.user_id===chatUser.id?'mine':''); div.dataset.chatId=row.id;
-    const meta = document.createElement('div'); meta.className='chat-meta';
-    const name = document.createElement('b'); name.textContent = row.display_name||'طرفدار';
-    const time = document.createElement('span'); time.textContent = new Date(row.created_at).toLocaleString('fa-IR',{dateStyle:'short',timeStyle:'short'});
-    meta.append(name,time);
-    const body = document.createElement('div'); body.className='chat-text'; body.textContent = row.message;
-    div.append(meta,body); chatMessagesEl.append(div); chatMessagesEl.scrollTop = chatMessagesEl.scrollHeight;
-  }).subscribe(status => { if (status==='SUBSCRIBED') chatConnectionEl.textContent='🟢 چت زنده فعال است'; });
-}
-chatForm.addEventListener('submit', async e => {
-  e.preventDefault();
-  const message = chatInput.value.trim();
-  if (!message) return;
-  if (!supabaseClient) { chatStatusEl.textContent = 'اتصال آنلاین تنظیم نشده.'; return; }
-  const { data } = await supabaseClient.auth.getSession();
-  chatUser = data.session?.user || null;
-  if (!chatUser) { chatStatusEl.textContent = 'اول وارد حساب شو.'; return; }
-  chatInput.disabled = true; chatForm.querySelector('button').disabled = true;
-  chatStatusEl.textContent = 'در حال ارسال…';
-  const displayName = String(chatUser.user_metadata?.display_name || chatUser.email?.split('@')[0] || 'طرفدار').slice(0,30);
-  const { error } = await supabaseClient.from('public_chat_messages').insert({ user_id: chatUser.id, display_name: displayName, message: message.slice(0,500) });
-  chatInput.disabled = false; chatForm.querySelector('button').disabled = false;
-  if (error) { chatStatusEl.textContent = 'پیام ارسال نشد: ' + error.message; return; }
-  chatInput.value = ''; chatStatusEl.textContent = 'پیامت ارسال شد 💜';
-});
-
-/* ============================================================
-   عکس کنار عنوان
-   ============================================================ */
-const heroPhotoInput = $("heroPhotoInput");
-const heroPhotoPreview = $("heroPhotoPreview");
-function showHeroPhoto(dataUrl){ heroPhotoPreview.src = dataUrl; heroPhotoPreview.classList.add("visible"); }
-try { const saved = localStorage.getItem("tm_hero_photo"); if (saved) showHeroPhoto(saved); } catch(err){}
-heroPhotoInput.addEventListener("change", () => {
-  const file = heroPhotoInput.files && heroPhotoInput.files[0];
-  if (!file) return;
-  if (!file.type.startsWith("image/")) { alert("لطفاً عکس انتخاب کن."); return; }
-  if (file.size > 2*1024*1024) { alert("عکس باید کمتر از ۲ مگابایت باشد."); return; }
-  const reader = new FileReader();
-  reader.onload = () => {
-    showHeroPhoto(reader.result);
-    try { localStorage.setItem("tm_hero_photo", reader.result); } catch(err){}
-  };
-  reader.readAsDataURL(file);
-});
-
-/* ============================================================
-   شروع
-   ============================================================ */
-try {
-  const savedMembers = JSON.parse(localStorage.getItem("tm_members_data")||"null");
-  if (Array.isArray(savedMembers) && savedMembers.length === members.length) {
-    savedMembers.forEach((m,i) => { if (m.name) members[i].name = m.name; if (m.bio) members[i].bio = m.bio; });
-  }
-} catch(err){}
-
-renderMembers();
-renderSongs();
-updateAdminUI();
-if (supabaseClient) { loadNews(); loadCovers(); loadPublicChat(); }
-</script>
+<script src="app.js"></script>
 </body>
 </html>
